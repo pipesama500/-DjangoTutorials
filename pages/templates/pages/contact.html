@@ -1,0 +1,15 @@
+{% extends 'pages/base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+{% block header_title %} {{ subtitle }} {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Contact Information</h2>
+    <ul class="list-unstyled">
+        <li><strong>Email:</strong> {{ email }}</li>
+        <li><strong>Address:</strong> {{ address }}</li>
+        <li><strong>Phone:</strong> {{ phone }}</li>
+    </ul>
+</div>
+{% endblock %}
